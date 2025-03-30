@@ -8,7 +8,7 @@ function ItemForm({ onItemAdded }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:5000/api/items/', { name, category });
+        await axios.post(`${process.env.REACT_APP_API_URL}/api/items/`, { name, category });
         setName('');
         setCategory('');
         onItemAdded();

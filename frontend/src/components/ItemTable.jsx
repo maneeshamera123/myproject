@@ -13,12 +13,12 @@ function ItemTable({ refresh }) {
     }, [search, refresh]);
 
     const fetchItems = async () => {
-        const response = await axios.get(`http://localhost:5000/api/items/?search=${search}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/items/?search=${search}`);
         setItems(response.data);
     };
 
     const handleDelete = async (id) => {
-        await axios.delete(`http://localhost:5000/api/items/${id}`);
+        await axios.delete(`${process.env.REACT_APP_API_URL}/api/items/${id}`);
         fetchItems();
     };
 
@@ -29,7 +29,7 @@ function ItemTable({ refresh }) {
 
     const handleSubmitUpdate = async () => {
         if (editItem.name && editItem.category) {
-            await axios.put(`http://localhost:5000/api/items/${editItem.id}`, {
+            await axios.put(`${process.env.REACT_APP_API_URL}/api/items/${editItem.id}`, {
                 name: editItem.name,
                 category: editItem.category
             });
