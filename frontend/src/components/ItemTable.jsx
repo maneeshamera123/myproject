@@ -24,6 +24,7 @@ function ItemTable({ refresh }) {
 
     const handleUpdate = (id, currentName, currentCategory) => {
         setEditItem({ id, name: currentName, category: currentCategory });
+        console.log("hiii");
         setShowModal(true);
     };
 
@@ -95,7 +96,7 @@ function ItemTable({ refresh }) {
 
             {showModal && (
                 <div className="modal-overlay">
-                    <div className="modal">
+                    <div className="modal1">
                         <h3>Edit Item</h3>
                         <input
                             type="text"
