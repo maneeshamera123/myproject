@@ -13,7 +13,7 @@ function ItemTable({ refresh }) {
     }, [search, refresh]);
 
     const fetchItems = async () => {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/items/?search=${search}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/items?search=${search}`);
         setItems(response.data);
     };
 
