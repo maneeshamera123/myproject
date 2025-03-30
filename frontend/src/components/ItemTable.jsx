@@ -133,6 +133,7 @@ const styles = {
     },
     searchContainer: {
         marginBottom: '2rem',
+        width: '97%',
     },
     searchInput: {
         width: '100%',
@@ -165,20 +166,24 @@ const styles = {
     tableContainer: {
         overflowX: 'auto',
     },
+    tableHeader: {
+        backgroundColor: '#f8f9fa',
+    },
     table: {
         width: '100%',
         borderCollapse: 'collapse',
         fontSize: '0.9rem',
+        tableLayout: 'fixed' 
     },
-    tableHeader: {
-        backgroundColor: '#f8f9fa',
-    },
-    th: {
+    td: {
         padding: '1rem',
-        textAlign: 'left',
-        fontWeight: '600',
-        color: '#495057',
-        borderBottom: '2px solid #dee2e6',
+        borderBottom: '1px solid #dee2e6',
+        verticalAlign: 'middle',
+        wordWrap: 'break-word', 
+        whiteSpace: 'normal',   
+        minWidth: '120px',      
+        maxWidth: '250px',      
+        overflow: 'hidden'
     },
     tr: {
         transition: 'background-color 0.2s ease',
@@ -186,10 +191,14 @@ const styles = {
             backgroundColor: '#f8f9fa',
         },
     },
-    td: {
+    th: {
         padding: '1rem',
-        borderBottom: '1px solid #dee2e6',
-        verticalAlign: 'middle',
+        textAlign: 'left',
+        fontWeight: '600',
+        color: '#495057',
+        borderBottom: '2px solid #dee2e6',
+        wordWrap: 'break-word', 
+        whiteSpace: 'normal'
     },
     categoryBadge: {
         display: 'inline-block',

@@ -22,17 +22,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// GET /api/items/:id
-router.get('/:id', async (req, res) => {
-  try {
-    const item = await Item.findById(req.params.id);
-    if (!item) return res.status(404).json({ error: 'Item not found' });
-    res.json(item);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
 // PUT /api/items/:id
 router.put('/:id', async (req, res) => {
   try {
