@@ -15,7 +15,7 @@ const corsOptions = {
   credentials: true
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.options('*', cors(corsOptions)); // Enable preflight for all routes
 app.use(express.json());
 app.use('/api/items', itemsRouter);
