@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const corsOptions = {
   origin: [
-    'https://myprojectfrontend-beryl.vercel.app',
+    'https://myprojectbackend19.vercel.app',
     'http://localhost:3000'
   ],
   methods: 'GET,POST,PUT,DELETE,OPTIONS',
