@@ -1,0 +1,19 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f1f3f5;
+    padding: 2rem;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #2d3436;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ced4da;
+    font-size: 2rem;
+    font-weight: 700;
+}
