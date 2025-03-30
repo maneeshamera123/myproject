@@ -8,6 +8,7 @@ class Item {
       'INSERT INTO items (name, category) VALUES ($1, $2) RETURNING *',
       [name, category]
     );
+    
     return result.rows[0];
   }
 
@@ -21,6 +22,7 @@ class Item {
     }
     
     const result = await pool.query(query, values);
+    console.log(result);
     return result.rows;
   }
 
