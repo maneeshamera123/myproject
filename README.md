@@ -1,29 +1,53 @@
 📂 Project Structure(Imp fiels)
 project-structure/
+
 │myproject/
+
 │-- backend/
+
 │   ├── config/
+
 │   │   ├── db.js
+
 │   │   models/
+
 │   │   ├── Item.js
+
 │   ├── routes/
-│   │   ├── Items.js            
-│   ├── server.js      
-│   ├── vercel.json          
+
+│   │   ├── Items.js 
+
+│   ├── server.js 
+
+│   ├── vercel.json  
+s
 │
 │-- frontend/
+
 │   ├── src/
+
 │   │   ├── components/ 
+
 │   │   │    ├── ItemForm.jsx/ 
+
 │   │   │    ├── ItemTable.jsx/
+
 │   │   ├── css/ 
+
 │   │   │    ├── App.css/ 
+
 │   │   │    ├── ItemForm.css/ 
-│   │   │    ├── ItemTable.css/     
+
+│   │   │    ├── ItemTable.css/
+
 │   ├── App.js         
+
 │   ├── index.js 
-│   ├── index.css       
+
+│   ├── index.css     
+
 │
+
 │-- README.md   
 
 
